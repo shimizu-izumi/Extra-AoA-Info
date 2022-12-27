@@ -12,7 +12,7 @@ Current broken things:
 The aim of this mod is to add additional information to AoA that may not be suitable for the base mod.
 It also serves as an example add-on mod for people looking to learn how to integrate with AoA
 
-If you have suggestions for more information that can be displayed from this mod, raise an issue in the issues tab, or feel free to contribute yourself with a pull request, as this addon is open-source.
+If you have suggestions for more information that can be displayed from this mod, create a discussion in the Discussions tab, or feel free to contribute yourself with a pull request, as this addon is open-source.
 
 You can download AoA here:
 https://www.curseforge.com/minecraft/mc-mods/advent-of-ascension-nevermine
