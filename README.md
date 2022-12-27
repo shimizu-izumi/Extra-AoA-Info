@@ -6,7 +6,7 @@ Currently, it does four things:
 * Adds dynamic Energy/sec values all AoA Blasters
 * Adds Armour value differences on armour pieces
 
-Current broken things:
+Currently broken things:
 * Displays a HUD in the top left corner when using AoA weapons that shows the required ammo counts.
 
 The aim of this mod is to add additional information to AoA that may not be suitable for the base mod.
