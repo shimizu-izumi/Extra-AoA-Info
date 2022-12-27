@@ -1,0 +1,8 @@
+{
+  "gui.aoainfo.tooltip.perSec": "(%1$s/сек)",
+  "gui.aoainfo.tooltips.dps": "(%1$s урона в сек)",
+  "gui.aoainfoconfig.displayAdvancedTooltips": "Отображать расширенные подсказки",
+  "gui.aoainfoconfig.displayAmmoHud": "Отображать HUD боеприпасов",
+  "gui.aoainfo.ammoHud.amount": "x%1$s",
+  "gui.aoainfo.ammoHud.available": "Доступно %1$s"
+}

@@ -5,8 +5,9 @@ license = "All Rights Reserved"
 modId = "aoainfo"
 version = "${file.jarVersion}"
 displayName = "Extra AoA Info"
+logoFile="logo.png"
 displayURL="https://adventofascension.gamepedia.com/Advent_of_Ascension_Wiki"
-credits="Tslat - original mod"
+credits="Tslat - original mod (AoA InfoBundle)"
 authors = "Shimizu_Izumi"
 description = '''
 Adds more information to areas of Advent of Ascension

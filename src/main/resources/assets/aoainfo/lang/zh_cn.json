@@ -1,0 +1,8 @@
+{
+  "gui.aoainfo.tooltip.perSec": "(%1$s/秒)",
+  "gui.aoainfo.tooltips.dps": "(%1$s点伤害/秒)",
+  "gui.aoainfoconfig.displayAdvancedTooltips": "显示高级提示",
+  "gui.aoainfoconfig.displayAmmoHud": "显示弹药HUD",
+  "gui.aoainfo.ammoHud.amount": "x%1$s",
+  "gui.aoainfo.ammoHud.available": "%1$s可用"
+}

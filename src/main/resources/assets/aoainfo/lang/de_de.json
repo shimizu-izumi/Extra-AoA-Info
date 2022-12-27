@@ -1,0 +1,8 @@
+{
+  "gui.aoainfo.tooltip.perSec": "(%1$s/sek)",
+  "gui.aoainfo.tooltips.dps": "(%1$s SPS)",
+  "gui.aoainfoconfig.displayAdvancedTooltips": "Zeige erweiterte Tooltips",
+  "gui.aoainfoconfig.displayAmmoHud": "Zeige Munitions HUD",
+  "gui.aoainfo.ammoHud.amount": "x%1$s",
+  "gui.aoainfo.ammoHud.available": "%1$s Verfügbar"
+}

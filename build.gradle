@@ -13,7 +13,7 @@ java {
 }
 
 minecraft {
-    mappings channel: 'parchment', version: '2022.11.27-1.19.2'
+    mappings channel: 'parchment', version: '1.19.3-2022.12.18-1.19.2'
 
     runs {
         client {
