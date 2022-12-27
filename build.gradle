@@ -1,0 +1,118 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+}
+
+
+group = 'me.shimizuizumi'
+version = '1.0.0'
+
+java {
+    archivesBaseName = 'aoainfo'
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+
+minecraft {
+    mappings channel: 'parchment', version: '2022.11.27-1.19.2'
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            property 'forge.logging.console.level', 'debug'
+
+            property 'forge.enabledGameTestNamespaces', 'aoainfo'
+
+            mods {
+                extraaoainfo {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            property 'forge.logging.console.level', 'debug'
+
+            property 'forge.enabledGameTestNamespaces', 'aoainfo'
+
+            mods {
+                extraaoainfo {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        gameTestServer {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            property 'forge.logging.console.level', 'debug'
+
+            property 'forge.enabledGameTestNamespaces', 'aoainfo'
+
+            mods {
+                extraaoainfo {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        data {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            property 'forge.logging.console.level', 'debug'
+
+            args '--mod', 'extraaoainfo', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
+            mods {
+                extraaoainfo {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+repositories {
+    flatDir {
+         dir 'libs'
+    }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.19.2-43.2.2'
+
+    compileOnly fg.deobf("net.tslat.aoa3:aoa3-1.19.2:3.6.18")
+    runtimeOnly fg.deobf("net.tslat.aoa3:aoa3-1.19.2:3.6.18")
+}
+
+jar {
+    manifest {
+        attributes([
+                "Specification-Title"     : "extraaoainfo",
+                "Specification-Vendor"    : "Shimizu_Izumi",
+                "Specification-Version"   : "1",
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : project.jar.archiveVersion,
+                "Implementation-Vendor"   : "Shimizu_Izumi",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+jar.finalizedBy('reobfJar')
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
