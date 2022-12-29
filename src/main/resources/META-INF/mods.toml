@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[43,)"
-license = "All Rights Reserved"
+license = "MIT"
 [[mods]]
 modId = "aoainfo"
 version = "${file.jarVersion}"
