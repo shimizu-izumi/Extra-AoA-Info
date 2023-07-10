@@ -3,7 +3,7 @@ This mod is an addon to Advent of Ascension.
 
 Currently, it does four things:
 * Adds dynamic DPS values to all AoA and some vanilla weapon tooltips
-* Adds dynamic Energy/sec values all AoA Blasters
+* Adds dynamic Energy/sec values to all AoA Blasters
 * Adds Armour value differences on armour pieces
 
 Currently broken things:
@@ -14,7 +14,6 @@ It also serves as an example add-on mod for people looking to learn how to integ
 
 If you have suggestions for more information that can be displayed from this mod, create a discussion in the Discussions tab, or feel free to contribute yourself with a pull request, as this addon is open-source.
 
-You can download AoA here:
-https://www.curseforge.com/minecraft/mc-mods/advent-of-ascension-nevermine
+You can download AoA [here](https://modrinth.com/mod/adventofascension).
 
-### This is a ported version of [AoA InfoBundle](https://github.com/Tslat/AoA-InfoBundle) by Tslat.
+### This is a ported version of AoA InfoBundle by Tslat.
